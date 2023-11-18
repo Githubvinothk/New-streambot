@@ -22,7 +22,7 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 async def login_handler(c: Client, m: Message):
     try:
         try:
-            ag = await m.reply_text("Now send me password.\n\n𝚃𝚑𝚒𝚜 𝚒𝚜 𝚊 𝚙𝚛𝚒𝚟𝚊𝚝𝚎 𝚋𝚘𝚝 𝙾𝚝𝚑𝚎𝚛 𝚞𝚜𝚎𝚛𝚜 𝙿𝙼 𝚏𝚘𝚛 𝚙𝚊𝚜𝚜𝚠𝚘𝚛𝚍 👉 @dhanusha_3.\n\n(You can use /cancel command to cancel the process)")
+            ag = await m.reply_text("Now send me password.\n\n𝚃𝚑𝚒𝚜 𝚒𝚜 ᴏᴜʀ ᴏғғɪᴄɪᴀʟ (TDM) 𝚙𝚛𝚒𝚟𝚊𝚝𝚎 Aᴅᴍɪɴ's 𝚋𝚘𝚝. Fᴏʀ 𝙾𝚝𝚑𝚎𝚛 𝚞𝚜𝚎𝚛𝚜 ᴋɪɴᴅʟʏ ᴜsᴇ ᴛʜɪs Fʀᴇᴇ Bᴏᴛ 🤖👉  @TDM_PUB_Files_Streaming_bot 🥰.\n\n(You can use /cancel command to cancel the process)")
             _text = await c.listen.Message(filters.text, id=filters.chat(m.chat.id), timeout=90)
             if _text.text:
                 textp = _text.text
